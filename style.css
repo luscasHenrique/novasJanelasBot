@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins', sans-serif;
+}
+body {
+    background-color: #1e2120;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
+    background: transparent;
+    backdrop-filter: blur(3px);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+  }
+  
+  .sessao-informacoes {
+    flex: 1;
+    text-align: left;
+    margin-right: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .sessao-informacoes a,
+  .sessao-informacoes a:hover,
+  .sessao-informacoes a:active,
+  .sessao-informacoes a:focus {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .arquivo-exemplo {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .arquivo-exemplo h2 {
+    color: #fff;
+  }
+  
+  .arquivo-exemplo button {
+    background-color: #00D201;
+    font-size: 1em;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .arquivo-exemplo button:hover {
+    background-color: #008d01;
+  }
+  
+  .upload-container {
+    border: 2px dashed #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+  }
+  
+  .upload-container:hover {
+    border-color: #00D201;
+  }
+  
+  .upload-container p {
+    margin-top: 0;
+  }
+  
+
+  
+  .upload-container input,
+  .upload-container button {
+    display: block;
+    background-color: #00D201;
+    font-size: 1em;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .upload-container input:hover,
+  .upload-container button:hover {
+    background-color: #008d01;
+  }
+  
+  .sessao-qrcode {
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .sessao-qrcode img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .sessao-qrcode p {
+    color: #fff;
+    text-decoration: none;
+  }
+  
