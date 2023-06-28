@@ -7,6 +7,9 @@ body {
   height: 100vh;
   margin: 0;
 }
+p{
+  color:#00D201 ;
+}
 
 .container {
   background-color: #1e2120;
@@ -43,18 +46,18 @@ body {
 }
 
 .form-control {
-  background-color: #2b2e30;
+  background-color: #4e4e4e;
   color: #fff;
   border-color: #2b2e30;
 }
 
 .form-control:focus {
-  background-color: #2b2e30;
+  background-color: #828383;
   color: #fff;
   border-color: #2b2e30;
   box-shadow: none;
 }
 
 .form-control::placeholder {
-  color: #a0a0a0;
+  color: #dfdcdc;
 }

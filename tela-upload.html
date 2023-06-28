@@ -8,26 +8,37 @@
     <title>Tela de upload</title>
 </head>
 <body>
-    <div class="container text-center">
-        <div class="col-md-6 margin-card">
-            <div class="card">
-                <div class="card-body">
+    <div class="container px-4"> <!-- Adicionada classe px-4 -->
+        <div class="col-md-6 mx-auto">
+            <div class="card my-2">
+                <div class="card-body text-center"> <!-- Adicionada classe text-center -->
                     <h2 class="card-title">Baixe o Arquivo de Referência abaixo:</h2>
                     <a href="caminho/para/arquivo.extensao" download class="btn btn-primary">Download</a>
                 </div>
             </div>
         </div>
-        <div class="col-md-6 margin-card">
-            <div class="card">
-                <div class="card-body mx-auto">
+        <div class="col-md-6 mx-auto text-center">
+            <div class="card my-2">
+                <div class="card-body">
                     <h2 class="card-title">Upload de Arquivo</h2>
-                    <p class="card-title">Arraste e solte o arquivo aqui ou</p>
-                    <input type="file" id="file-upload" class="form-control mb-3" placeholder="Selecione um arquivo">
-                    <button class="btn btn-primary">Enviar</button>
+                    <p class=" mb-3">Arraste e solte o arquivo aqui ou</p> <!-- Adicionada classe text-center e mb-3 -->
+                    <div class="form-group text-center mb-3">
+                        <h2 class="card-title">Nome da Lista:</h2> <!-- Adicionada classe text-center e mb-3 -->
+                        <input type="text" class="form-control" placeholder="Digite o nome da lista.." required>
+                    </div>
+                    <div class="form-group text-center mb-3">
+                        <h2 class="card-title">Tipo de Lista:</h2> <!-- Adicionada classe text-center e mb-3 -->
+                        <input type="text" class="form-control" placeholder="Digite o tipo da lista.." required>
+                    </div>
+                    <div class="text-center">
+                        <input type="file" id="file-upload" class="form-control mb-3" placeholder="Selecione um arquivo" >
+                        <button class="btn btn-primary">Enviar</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="telaUpload.js"></script>
 </body>
 </html>
