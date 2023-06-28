@@ -16,9 +16,9 @@
           idCell.textContent = item.id;
           idCell.classList.add("align-middle");
   
-          const tipoCell = row.insertCell();
-          tipoCell.textContent = item.tipo;
-          tipoCell.classList.add("align-middle");
+          const descricaoCell = row.insertCell();
+          descricaoCell.textContent = item.descricao;
+          descricaoCell.classList.add("align-middle");
   
           const nomeListaCell = row.insertCell();
           nomeListaCell.textContent = item.nomeLista;
@@ -62,18 +62,18 @@
       function abrirModalEdicao(item) {
         const editModalLabel = document.getElementById("editModalLabel");
         const editNomeInput = document.getElementById("edit-nome");
-        const editTipoInput = document.getElementById("edit-tipo");
+        const editTipoInput = document.getElementById("edit-descricao");
         const saveChangesBtn = document.getElementById("saveChangesBtn");
   
         editModalLabel.textContent = `Editar Dados - ID: ${item.id}`;
         editNomeInput.value = item.nomeLista;
-        editTipoInput.value = item.tipo;
+        editTipoInput.value = item.descricao;
   
         saveChangesBtn.addEventListener("click", () => {
           // Aqui você pode implementar a lógica para salvar as alterações feitas no modal
           // Por enquanto, apenas exibirei os valores no console
           console.log("Nome:", editNomeInput.value);
-          console.log("Tipo:", editTipoInput.value);
+          console.log("Descrição:", editDescricaoInput.value);
   
           // Fechar o modal após salvar as alterações
           const modal = bootstrap.Modal.getInstance(document.getElementById("editModal"));

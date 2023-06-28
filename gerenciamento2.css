@@ -1,44 +1,68 @@
 body {
-    background-color: #191c24;
-    color: #fff;
-    padding-top: 20px;
-  }
-
-  table {
-    color: #fff;
-  }
-
-  th {
-    background-color: #343a40;
-    text-align: center;
-  }
-
-  td {
-    text-align: center;
-  }
-
+  background: transparent;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+p{
+  color:#3B807F ;
+}
+.container{
+  background-color: #191C24;
+  border-radius: 10px;
+  margin: 1em;
+  border: 1px solid #3B807F;
+}
+td{
+text-align:center!important;
+}
+.table-bordered{
+    border-radius: 10px;
+}
   .form-control {
-    background-color: #343a40;
+    background-color: #3B807F;
     color: #fff;
+    border: none;
   }
+  .form-control:focus {
+    background-color: #164345;
+    color: #fff;
+    border-color: #3B807F;
+    box-shadow: none;
+  }
+  .form-control::placeholder {
+    color: #dfdcdc;
+  }
+  .progress-bar {
+    background-color: #1affdd;
+}
+
 /* Espaçamento entre botões na coluna Ações */
   .espaco-envolta .btn{
     margin: .3em;
   }
 
-  .btn-primary{
-    background: #164345;
+  .btn-primary {
+    background-color: #57B9AA;
     color: #fff;
-    border-color: #164345;
+    font-weight: 600;
+    font-size: 17px;
+    border-color: #3B807F;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    padding: .6em 1.8em;
+  }
+  .btn-primary:hover {
+    background-color: #3B807F;
+    border-color: #57B9AA;
   }
   .btn-danger {
     background-color: #c22222;
     color: #fff;
     border-color: #c22222;
-  }
-
-  .btn-primary:hover{
-    background: #018b92;
   }
   .btn-danger:hover {
     background-color: #dc3545;
@@ -68,10 +92,21 @@ body {
     justify-content: center;
   }
 /* estilizaçao modal */
+.modal-dialog{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
   .modal-content {
-        background-color: #191C24;
-        color: #fff;
+    align-content: center;
+    background-color: #191C24;
+    border-radius: 10px;
+    margin: 1em;
+    border: 1px solid #3B807F;
     }
+.modal-footer{
+  justify-content: center;
+}
 .btn-close-white{
     color: #fff;
 }

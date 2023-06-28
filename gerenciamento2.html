@@ -9,17 +9,17 @@
   <link rel="stylesheet" href="gerenciamento2.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container shadow-lg">
       <h1 class="text-center">Gerenciamento de Disparos</h1>
       <div class="row mt-4 filter-section">
         <div class="col-md-4">
           <div class="mb-3">
-            <label for="tipo-filter" class="form-label">Filtrar por Tipo:</label>
+            <label for="tipo-filter" class="form-label">Filtrar por Descrição:</label>
             <select id="tipo-filter" class="form-select">
               <option value="">Todos</option>
-              <option value="1">Tipo 1</option>
-              <option value="2">Tipo 2</option>
-              <option value="3">Tipo 3</option>
+              <option value="1">Descrição 1</option>
+              <option value="2">Descrição 2</option>
+              <option value="3">Descrição 3</option>
             </select>
           </div>
         </div>
@@ -30,30 +30,32 @@
           </div>
         </div>
       </div>
-      <table class="table table-bordered table-striped mt-4">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Tipo</th>
-            <th>Nome da Lista</th>
-            <th>Quantidade de Contatos</th>
-            <th>Quantidade de Enviados</th>
-            <th>Status</th>
-            <th>Ações</th>
-          </tr>
-        </thead>
-        <tbody id="data-rows">
-          <!-- Linhas de dados -->
-        </tbody>
-      </table>
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover table-dark">
+            <thead class="">
+                <tr class="">
+                    <th>ID</th>
+                    <th>Descrição</th>
+                    <th>Nome da Lista</th>
+                    <th>Quantidade de Contatos</th>
+                    <th>Quantidade de Enviados</th>
+                    <th>Status</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="data-rows">
+                <!-- Linhas de dados -->
+            </tbody>
+        </table>
     </div>
+  </div>
     
  <!-- Modal de Edição -->
 <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
+    <div class="modal-dialog ">
+      <div class="modal-content shadow-lg">
         <div class="modal-header">
-          <h5 class="modal-title" id="editModalLabel">Editar Dados</h5>
+          <h2 class="modal-title" id="editModalLabel">Editar Dados</h2>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
         </div>
         <div class="modal-body">
@@ -62,11 +64,11 @@
             <input type="text" id="edit-nome" class="form-control">
           </div>
           <div class="mb-3">
-            <label for="edit-tipo" class="form-label">Tipo:</label>
-            <select id="edit-tipo" class="form-select">
-              <option value="1">Tipo 1</option>
-              <option value="2">Tipo 2</option>
-              <option value="3">Tipo 3</option>
+            <label for="edit-descricao" class="form-label">Descrição:</label>
+            <select id="edit-descricao" class="form-select">
+              <option value="1">Descrição 1</option>
+              <option value="2">Descrição 2</option>
+              <option value="3">Descrição 3</option>
             </select>
           </div>
         </div>
