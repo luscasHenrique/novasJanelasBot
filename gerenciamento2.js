@@ -1,6 +1,9 @@
     // Dados de exemplo
     var dados = [
-        { id: 1, tipo: "Tipo 1", nomeLista: "Lista A", quantidadeContatos: 100, quantidadeEnviados: 70 },
+        { id: 1, descricao: "Descrição 1", nomeLista: "Lista A", quantidadeContatos: 100, quantidadeEnviados: 70 },
+        { id: 2, descricao: "Descrição 2", nomeLista: "Lista B", quantidadeContatos: 200, quantidadeEnviados: 50 },
+        { id: 3, descricao: "Descrição 5", nomeLista: "Lista C", quantidadeContatos: 150, quantidadeEnviados: 10 },
+        { id: 4, descricao: "Descrição 8", nomeLista: "Lista F", quantidadeContatos: 80, quantidadeEnviados: 80 },
         // Outros dados...
       ];
   
