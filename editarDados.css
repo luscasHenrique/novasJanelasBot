@@ -1,0 +1,10 @@
+body {
+    background-color: #191c24;
+    color: #fff;
+    padding-top: 20px;
+  }
+
+  .form-control {
+    background-color: #343a40;
+    color: #fff;
+  }

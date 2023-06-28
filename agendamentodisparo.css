@@ -1,0 +1,57 @@
+body {
+  background-color: #191c24;
+  color: #fff;
+  padding-top: 20px;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-control {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.btn-primary,
+.btn-secondary {
+  background-color: #343a40;
+  color: #fff;
+  border-color: #343a40;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  background-color: #495057;
+  border-color: #495057;
+}
+
+.form-title {
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.qr-code-section {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.qr-code-message {
+  color: #fff;
+  margin-top: 10px;
+}
+
+.number-input-section {
+  margin: 1em;
+}
+
+.number-input-title {
+  margin-bottom: 10px;
+  text-align: center;
+}

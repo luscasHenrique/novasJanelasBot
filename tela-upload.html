@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="telaupload.css">
+    <title>Tela de upload</title>
+</head>
+<body>
+    <div class="container text-center">
+        <div class="col-md-6 margin-card">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">Baixe o Arquivo de Referência abaixo:</h2>
+                    <a href="caminho/para/arquivo.extensao" download class="btn btn-primary">Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 margin-card">
+            <div class="card">
+                <div class="card-body mx-auto">
+                    <h2 class="card-title">Upload de Arquivo</h2>
+                    <p class="card-title">Arraste e solte o arquivo aqui ou</p>
+                    <input type="file" id="file-upload" class="form-control mb-3" placeholder="Selecione um arquivo">
+                    <button class="btn btn-primary">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="telaUpload.js"></script>
+</body>
+</html>
